@@ -1,0 +1,3 @@
+PUT https://[service name].search.windows.net/skillsets/[skillset name]?api-version=[api version]
+  Content-Type: application/json  
+  api-key: [admin key]
