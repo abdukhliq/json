@@ -1,0 +1,23 @@
+{
+  "@odata.type": "#Microsoft.Skills.Custom.WebApiSkill",
+  "description": "A custom skill that calls Azure AI Document Intelligence",
+  "uri": "https://contoso.com/formrecognizer",
+  "batchSize": 1,
+  "context": "/document",
+  "inputs": [
+    {
+      "name": "formUrl",
+      "source": "/document/metadata_storage_path"
+    }
+  ],
+  "outputs":[ 
+    { 
+      "name":"address",
+      "targetName":"address"
+    },
+    { 
+      "name":"recipient",
+      "targetName":"recipient"
+    }
+  ]
+}
